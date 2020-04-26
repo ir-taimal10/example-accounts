@@ -1,0 +1,53 @@
+@import '../styles/theme.scss';
+
+.example-accounts {
+  min-height: 100vh;
+
+
+  &__header {
+    background: rgb(248, 255, 244);
+    min-height: 100px;
+    margin: $space-inline-s;
+  }
+
+  &__content {
+    background: rgb(248, 255, 244);
+    min-height: 500px;
+    margin: $space-inline-s;
+    display: flex;
+
+
+    &-login {
+      background: rgb(244, 255, 178);
+      min-height: 500px;
+      margin: $space-inline-s;
+      width: 30%;
+    }
+
+    &-aside {
+      background: rgb(197, 225, 255);
+      min-height: 500px;
+      margin: $space-inline-s;
+      width: 70%;
+    }
+  }
+
+
+  &__footer {
+    background: rgb(248, 255, 244);
+    min-height: 100px;
+    margin: $space-inline-s;
+  }
+
+
+}
+
+.example-accounts-canvas {
+  background: rgba(66, 255, 79, 0.34);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
