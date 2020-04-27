@@ -5,26 +5,26 @@
 
 
   &__header {
-    background: rgb(248, 255, 244);
+    background: rgba(248, 255, 244, 0.4);
     height: 100px;
     margin: $space-inline-s;
   }
 
   &__content {
-    background: rgb(248, 255, 244);
+    background: rgba(248, 255, 244, 0.4);
     margin: $space-inline-s;
     display: flex;
 
 
     &-login {
-      background: rgb(244, 255, 178);
+      background: rgba(248, 255, 244, 0.4);
       height: 500px;
       margin: $space-inline-s;
       width: 30%;
     }
 
     &-aside {
-      background: rgb(197, 225, 255);
+      background: rgba(248, 255, 244, 0.4);
       height: 500px;
       margin: $space-inline-s;
       width: 70%;
@@ -33,7 +33,7 @@
 
 
   &__footer {
-    background: rgb(248, 255, 244);
+    background: rgba(248, 255, 244, 0.4);
     height: 100px;
     margin: $space-inline-s;
   }

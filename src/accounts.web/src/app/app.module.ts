@@ -7,6 +7,7 @@ import { SiteInfoComponent } from './site-info/site-info.component';
 import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AnimationComponent } from './animation/animation.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     SiteInfoComponent,
     LoginComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AnimationComponent
   ],
   imports: [
     BrowserModule,

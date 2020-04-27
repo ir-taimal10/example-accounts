@@ -1,7 +1,8 @@
 @import '../../styles/theme.scss';
-.footer{
+
+.footer {
   height: 100%;
   width: 100%;
-  background: $palette-primary-color-text;
+  background: rgb($palette-primary-color-text, 0.02);
   border: 1px solid $palette-secondary-text-color;
 }
