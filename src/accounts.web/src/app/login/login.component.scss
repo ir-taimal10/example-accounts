@@ -1,7 +1,47 @@
 @import '../../styles/theme.scss';
-.login{
+
+.login {
   height: 100%;
   width: 100%;
   background: rgb($palette-primary-color-text, 0.02);
   border: 1px solid $palette-secondary-text-color;
+
+  &__title {
+    padding: $space-inset-squish-l;
+    font-weight: $font-weight-semibold;
+  }
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: $space-inset-squish-l;
+    font-weight: $font-weight-semibold;
+
+    button {
+      margin: $space-stack-s 0;/*$space-stack-s;*/
+
+    }
+  }
+
+  &__split {
+    padding: $space-inset-squish-l;
+    font-weight: $font-weight-semibold;
+  }
+
+  &__singin {
+    padding: $space-inset-squish-l;
+    font-weight: $font-weight-semibold;
+  }
+
+  &__start {
+    padding: $space-inset-squish-l;
+    font-weight: $font-weight-semibold;
+  }
+
+  &__options {
+    padding: $space-inset-squish-l;
+
+  }
+
 }
