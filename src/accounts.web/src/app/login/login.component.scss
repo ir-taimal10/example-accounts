@@ -25,22 +25,42 @@
   }
 
   &__split {
+    display: flex;
+    justify-content: space-between;
     padding: $space-inset-squish-l;
-    font-weight: $font-weight-semibold;
+    color:$palette-divider-color;
+    font-weight: 200;
+    &-line{
+      width: 40%;
+      border-bottom: 1px solid $palette-divider-color;
+      position: relative;
+      top: -7px;
+    }
   }
 
   &__singin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: $space-inset-squish-l;
     font-weight: $font-weight-semibold;
+
   }
 
   &__start {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: $space-inset-squish-l;
     font-weight: $font-weight-semibold;
   }
 
   &__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding: $space-inset-squish-l;
+    font-weight: 200;
 
   }
 
