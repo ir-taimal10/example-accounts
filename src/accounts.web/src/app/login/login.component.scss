@@ -7,19 +7,21 @@
   border: 1px solid $palette-secondary-text-color;
 
   &__title {
-    padding: $space-inset-squish-l;
+    padding: $space-stack-s $space-inline-xl;
     font-weight: $font-weight-semibold;
+    font-size: $font-size-title;
   }
 
   &__social {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: $space-inset-squish-l;
-    font-weight: $font-weight-semibold;
+    padding: $space-stack-s $space-inline-xl;
+    font-weight: $font-size-body;
 
     button {
-      margin: $space-stack-s 0;/*$space-stack-s;*/
+      margin: $space-stack-s 0; /*$space-stack-s;*/
+      height: 34px;
 
     }
   }
@@ -27,10 +29,12 @@
   &__split {
     display: flex;
     justify-content: space-between;
-    padding: $space-inset-squish-l;
-    color:$palette-divider-color;
+    padding: $space-stack-s $space-inline-xl;
+    color: $palette-divider-color;
     font-weight: 200;
-    &-line{
+    font-size: $font-size-body-small;
+
+    &-line {
       width: 40%;
       border-bottom: 1px solid $palette-divider-color;
       position: relative;
@@ -42,8 +46,20 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: $space-inset-squish-l;
+    padding: $space-stack-s $space-inline-xl;
     font-weight: $font-weight-semibold;
+
+    input {
+      line-height: 30px;
+      font-weight: $font-weight-regular;
+      /*border-radius: $border-radius-s;*/
+    }
+
+    &-input-error {
+      color: $color-state-error;
+      font-size: $font-size-body-small;
+      font-weight: $font-weight-regular;
+    }
 
   }
 
@@ -51,16 +67,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: $space-inset-squish-l;
-    font-weight: $font-weight-semibold;
+    padding: $space-stack-s $space-inline-xl;
+    font-weight: $font-size-body;
+
+    button {
+      margin: $space-stack-s 0; /*$space-stack-s;*/
+      height: 34px;
+    }
   }
 
   &__options {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: $space-inset-squish-l;
-    font-weight: 200;
+    padding: $space-stack-s $space-inline-xl;
+    font-size: $font-size-body-small;
+    font-weight: $font-weight-regular;
 
   }
 
