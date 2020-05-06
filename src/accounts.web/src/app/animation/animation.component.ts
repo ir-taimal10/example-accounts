@@ -35,10 +35,12 @@ export class AnimationComponent implements OnInit, AfterViewInit {
       // Add the bunny to the scene we are building
       app.stage.addChild(bunny);
 
+
       // Listen for frame updates
       app.ticker.add(() => {
         // each frame we spin the bunny around a bit
         bunny.rotation += 0.01;
+        bunny.scale.x += 0.01;
       });
     });
   }
