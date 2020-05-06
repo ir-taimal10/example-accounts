@@ -9,6 +9,10 @@ export class AccountsConfigurationProvider {
                 token_endpoint_auth_method: 'none'
             }],
             async findAccount(ctx, id) {
+                console.log("\n\n\n  ***** findAccount ***** ");
+                console.log(`ctx ${JSON.stringify(ctx)}`);
+                console.log(`id ${id}`);
+                console.log(" ***** findAccount ***** \n\n\n");
                 return {
                     accountId: id,
                     async claims(use, scope) { return { sub: id }; },
