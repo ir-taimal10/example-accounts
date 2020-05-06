@@ -31,10 +31,13 @@ export const configuration: any = {
 
 
 
-/*
+
     interactions: {
         policy: interactions,
         url(ctx, interaction) { // eslint-disable-line no-unused-vars
+            console.log("\n\n\n  ***** url ***** ");
+            console.log(`ctx ${JSON.stringify(ctx)}`);
+            console.log(`interaction ${interaction}`);
             return `/interaction/${ctx.oidc.uid}`;
         },
     },
@@ -42,7 +45,7 @@ export const configuration: any = {
         long: {signed: true, maxAge: (1 * 24 * 60 * 60) * 1000}, // 1 day in ms
         short: {signed: true},
         keys: ['some secret key', 'and also the old rotated away some time ago', 'and one more'],
-    },
+    },/*
     claims: {
         address: ['address'],
         email: ['email', 'email_verified'],
